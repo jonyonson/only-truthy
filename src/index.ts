@@ -1,6 +1,11 @@
-export const sum = (a: number, b: number) => {
-  if ('development' === process.env.NODE_ENV) {
-    console.log('boop');
+export default function onlyTruthy(object: {} | null) {
+  if (object == null) {
+    return {};
   }
-  return a + b;
-};
+
+  return Object.entries(object).reduce((acc, [key, value]) => {
+    return value ? { ...acc, [key]: value } : acc;
+  }, {});
+}
+
+export { onlyTruthy };
