@@ -1,6 +1,7 @@
 {
   "version": "1.0.0",
   "license": "MIT",
+  "repository": "jonyonson/only-truthy",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
@@ -32,7 +33,17 @@
     "trailingComma": "es5"
   },
   "name": "only-truthy",
-  "author": "Jonathan Taylor",
+  "author": {
+    "name": "Jonathan Taylor",
+    "email": "jonathan.taylor.dev@gmail.com",
+    "url": "https://jonathantaylor.io"
+  },
+  "keywords": [
+    "falsy",
+    "truthy",
+    "object",
+    "filter"
+  ],
   "module": "dist/only-truthy.esm.js",
   "size-limit": [
     {
