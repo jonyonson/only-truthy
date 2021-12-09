@@ -1,4 +1,4 @@
-export default function onlyTruthy(object: {} | null) {
+export default function onlyTruthy(object: object | null) {
   if (object == null) {
     return {};
   }
